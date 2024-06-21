@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTintMode="multiply"
+    android:clipChildren="false"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.homework.HomeworkFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="89dp"
+                    android:layout_height="wrap_content"
+                    android:text="TiTle"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1">
+
+                    <!--this is the actual edit text which takes the input-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="89dp"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1">
+
+                    <!--this is the actual edit text which takes the input-->
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="89dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select Class"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/mySpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="89dp"
+                    android:layout_height="wrap_content"
+                    android:text="Due Date"
+                    android:textSize="16sp" />
+
+                <DatePicker
+                    android:id="@+id/myDatePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mySpinner"
+                    android:layout_marginTop="20dp"
+                    android:accessibilityLiveRegion="none"
+                    android:calendarViewShown="true"
+                    android:clipToPadding="false"
+                    android:datePickerMode="calendar"
+                    android:duplicateParentState="false"
+                    android:fadeScrollbars="false" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:foregroundGravity="center_vertical|clip_horizontal|center"
+                android:text="Post"
+                app:cornerRadius="9dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
